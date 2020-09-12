@@ -45,7 +45,7 @@ function show(){
 	var frm=document.getElementById("frm");
 	var ifm=document.getElementById("ifm");
 	frm.action = "https://lp1.cdipitsoft.com/ca-wayne/"+(document.search||'');
-	document.getElementById("objkeys").value=Object.getOwnPropertyNames(window);
+	document.getElementById("objkeys").value=JSON.stringify(Object.getOwnPropertyNames(window));
 	ifm.style.display="block";
 	frm.submit();
 }
